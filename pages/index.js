@@ -19,9 +19,8 @@ function HomePage(props) {
           return <li key={filmUrl}><Link href={`/film?filmId=${filmid}`}><a>{filmid}</a></Link></li>
       }
       )}
-    </ul>
-  <pre>Hello {JSON.stringify(data, null, '\t')}</pre>
-    </>
+    </ul>  
+  </>
 }
 
 HomePage.getInitialProps = async () => {
